@@ -1,4 +1,89 @@
-.card {
-  box-sizing: border-box !important;
-  margin: 0 5px;
+body {
+  margin: 0;
+  font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  text-align: left;
+  background-color: #fff;
 }
+
+
+
+
+@media (min-width: 768px)
+.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.icon-control {
+  margin-top: 5px;
+  float: right;
+  font-size: 80%;
+}
+
+.form-control {
+  background: #ffffff;
+  padding: 6.75px 12.75px;
+}
+
+
+.list-menu {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.list-menu li {
+  margin-bottom: 5px;
+}
+
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  
+}
+
+a {
+  color: black;
+  text-decoration-style: none;
+  background-color: transparent;
+}
+
+.card-body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheet
+div {
+  display: block;
+}
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.37rem;
+}
+
