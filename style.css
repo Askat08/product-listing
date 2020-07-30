@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 .tom {
   background-color: rgba(0 0 0 0.5);
-=======
-<<<<<<< HEAD
 /* .card {
   box-sizing: border-box !important;
   margin: 0 5px;
 } */
-=======
 body {
   margin: 0;
   font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -95,7 +91,4 @@ div {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.37rem;
->>>>>>> bceae644a91cec4e11d66fab4d64497233d1f9fa
 }
-
->>>>>>> a8b729e1946932f81da1136566a81fefaebb88d9
