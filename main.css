@@ -1,0 +1,41 @@
+
+.navbar-light {
+    display: block;
+    padding: 25px;
+    width: 81%;
+    margin-left: 150px;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-left: 10px; 
+}
+
+
+.navbar {
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar-category li { 
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;    
+    margin-left:  0;
+}
+
+ li:nth-child(3) {
+    color: gray;
+}
+
+.navbar-category {
+    margin:  0 !important;
+    padding: 0;
+  
+}
+
+
