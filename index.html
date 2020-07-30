@@ -7,6 +7,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <title>Product listing</title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
 
@@ -50,18 +51,18 @@
 
     <div class="row">
       <!-- Aside -->
-      <aside class="col-3">
+      <aside class="col-12 col-md-6 col-lg-3 pl-5">
         <div class="accordion" id="accordionExample">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseProduct-type"
+                aria-expanded="false"
+                aria-controls="collapseProduct-type"
                 >
                   Product type <i class="icon-control fas fa-chevron-down"></i>
                 </button>
@@ -69,7 +70,7 @@
             </div>
 
             <div
-              id="collapseOne"
+              id="collapseProduct-type"
               class="collapse show"
               aria-labelledby="headingOne"
               data-parent="#accordionExample"
@@ -83,14 +84,14 @@
                       placeholder="Search"
                     />
                     <div class="input-group-append">
-                      <button class="btn btn-light" type="button">
-                        <i class="fa fa-search"></i>
+                      <button class="btn btn-light border" type="button">
+                        <i class="fa fa-search text-body"></i>
                       </button>
                     </div>
                   </div>
                 </form>
 
-                <ul class="list-menu">
+                <ul class="list-menu list-unstyled text-info">
                   <li><a href="#">People </a></li>
                   <li><a href="#">Watches </a></li>
                   <li><a href="#">Cinema </a></li>
@@ -102,6 +103,7 @@
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-header" id="headingTwo">
               <h2 class="mb-0">
@@ -109,16 +111,16 @@
                   class="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
-                  data-target="#collapseTwo"
+                  data-target="#collapseBrands"
                   aria-expanded="false"
-                  aria-controls="collapseTwo"
+                  aria-controls="collapseBrands"
                 >
                   Brands <i class="icon-control fas fa-chevron-down"></i>
                 </button>
               </h2>
             </div>
             <div
-              id="collapseTwo"
+              id="collapseBrands"
               class="collapse show"
               aria-labelledby="headingTwo"
               data-parent="#accordionExample"
@@ -178,6 +180,7 @@
               </div>
             </div>
           </div>
+
           <div class="card">
             <div class="card-header" id="headingThree">
               <h2 class="mb-0">
@@ -185,16 +188,16 @@
                   class="btn btn-link btn-block text-left collapsed"
                   type="button"
                   data-toggle="collapse"
-                  data-target="#collapseThree"
+                  data-target="#collapsePrice-range"
                   aria-expanded="false"
-                  aria-controls="collapseThree"
+                  aria-controls="collapsePrice-range"
                 >
                   Price range <i class="icon-control fas fa-chevron-down"></i>
                 </button>
               </h2>
             </div>
             <div
-              id="collapseThree"
+              id="collapsePrice-range"
               class="collapse show"
               aria-labelledby="headingThree"
               data-parent="#accordionExample"
@@ -238,9 +241,9 @@
                   class="btn btn-link btn-block text-left"
                   type="button"
                   data-toggle="collapse"
-                  data-target="#collapseOne"
+                  data-target="#collapseSizes"
                   aria-expanded="true"
-                  aria-controls="collapseOne"
+                  aria-controls="collapseSizes"
                 >
                   Sizes <i class="icon-control fas fa-chevron-down"></i>
                 </button>
@@ -248,7 +251,7 @@
             </div>
 
             <div
-              id="collapseOne"
+              id="collapseSizes"
               class="collapse show"
               aria-labelledby="headingOne"
               data-parent="#accordionExample"
@@ -284,9 +287,9 @@
                   class="btn btn-link btn-block text-left"
                   type="button"
                   data-toggle="collapse"
-                  data-target="#collapseOne"
+                  data-target="#collapseMore-filter"
                   aria-expanded="true"
-                  aria-controls="collapseOne"
+                  aria-controls="collapseMore-filter"
                 >
                   More filter <i class="icon-control fas fa-chevron-down"></i>
                 </button>
@@ -294,7 +297,7 @@
             </div>
 
             <div
-              id="collapsefive"
+              id="collapseMore-filter"
               class="collapse show"
               aria-labelledby="headingOne"
               data-parent="#accordionExample"
@@ -557,5 +560,10 @@
         </main>
       </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   </body>
 </html>
