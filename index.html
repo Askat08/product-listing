@@ -13,17 +13,21 @@
 
   <body>
     <!-- <div class="container"> -->
-    <!-- Header -->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">Navbar</a>
-      <form class="form-inline">
+    <!-- header -->
+    <nav class="">
+      <a class="navbar-brand"
+        ><img
+          src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png"
+          alt="logo"
+      /></a>
+      <form class="col-lg-12">
         <input
-          class="form-control mr-sm-2"
+          class="form-control"
           type="search"
           placeholder="Search"
           aria-label="Search"
         />
-        <i class="fas fa-search"></i>
+        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
       </form>
       <div class="links">
         <i class="fas fa-shopping-cart"></i>
@@ -43,6 +47,7 @@
         <li><a href="#">Great articles</a></li>
       </ul>
     </nav>
+<<<<<<< HEAD
     <!-- ROW aside main -->
     <div class="container">
       <div class="row">
@@ -63,6 +68,344 @@
               <li>Animals</li>
               <li>People</li>
             </ul>
+=======
+
+    <div class="row">
+      <!-- Aside -->
+      <aside class="col-3">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Product type <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <form class="pb-3">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Search"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-light" type="button">
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <ul class="list-menu">
+                  <li><a href="#">People </a></li>
+                  <li><a href="#">Watches </a></li>
+                  <li><a href="#">Cinema </a></li>
+                  <li><a href="#">Clothes </a></li>
+                  <li><a href="#">Home items </a></li>
+                  <li><a href="#">Animals</a></li>
+                  <li><a href="#">People </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Brands <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse show"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">
+                    Mercedes
+                    <b class="badge badge-pill badge-light float-right">120</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">
+                    Toyota
+                    <b class="badge badge-pill badge-light float-right">15</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">
+                    Mitsubishi
+                    <b class="badge badge-pill badge-light float-right">35</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">
+                    Nissan
+                    <b class="badge badge-pill badge-light float-right">89</b>
+                  </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" />
+                  <div class="custom-control-label">
+                    Honda
+                    <b class="badge badge-pill badge-light float-right">30</b>
+                  </div>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Price range <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse show"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <input
+                  type="range"
+                  class="custom-range"
+                  min="0"
+                  max="100"
+                  name=""
+                />
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Min</label>
+                    <input
+                      class="form-control"
+                      placeholder="$0"
+                      type="number"
+                    />
+                  </div>
+                  <div class="form-group text-right col-md-6">
+                    <label>Max</label>
+                    <input
+                      class="form-control"
+                      placeholder="$1,0000"
+                      type="number"
+                    />
+                  </div>
+                </div>
+                <!-- form-row.// -->
+                <button class="btn btn-block btn-primary">Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingfour">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Sizes <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <label class="checkbox-btn">
+                  <input type="checkbox" />
+                  <span class="btn btn-light"> XS </span>
+                </label>
+
+                <label class="checkbox-btn">
+                  <input type="checkbox" />
+                  <span class="btn btn-light"> SM </span>
+                </label>
+
+                <label class="checkbox-btn">
+                  <input type="checkbox" />
+                  <span class="btn btn-light"> LG </span>
+                </label>
+
+                <label class="checkbox-btn">
+                  <input type="checkbox" />
+                  <span class="btn btn-light"> XXL </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingfive">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  More filter <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapsefive"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <label class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    name="myfilter_radio"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">Any condition</div>
+                </label>
+
+                <label class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    name="myfilter_radio"
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">Brand new</div>
+                </label>
+
+                <label class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    name="myfilter_radio"
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">Used items</div>
+                </label>
+
+                <label class="custom-control custom-radio">
+                  <input
+                    type="radio"
+                    name="myfilter_radio"
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">Very old</div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Section -->
+      <div class="main bg-light col-9">
+        <nav class="navbar navbar-light bg-light">
+          <span>32 items found</span>
+          <div class="dropdown">
+            <a
+              class="btn border dropdown-toggle"
+              href="#"
+              role="button"
+              id="dropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Most popular
+            </a>
+          </div>
+          <div class="icons">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-th"></i>
+          </div>
+        </nav>
+
+        <hr />
+
+        <div class="row row-cols-1 row-cols-md-3">
+          <!-- items -->
+          <!-- <div class="card-deck border m-0"> -->
+          <div class="card" style="width: 18rem;">
+            <img
+              src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80"
+              class="card-img-top"
+              alt="t-shirt"
+            />
+            <p class="card-title">
+              Lorem ipsum dolor sit
+            </p>
+            <p class="card-text">
+              $12
+            </p>
+            <a href="#" class="btn btn-primary">Add to cart</a>
+>>>>>>> bceae644a91cec4e11d66fab4d64497233d1f9fa
           </div>
 
           <div class="aside-box">
