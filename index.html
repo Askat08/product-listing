@@ -7,6 +7,9 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <title>Product listing</title>
   </head>
 
@@ -16,20 +19,19 @@
     <!-- <div class="container"> -->
     <!-- header -->
     <nav class="">
-      <a class="navbar-brand"
+      <a class="navbar"
         ><img
           src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png"
           alt="logo"
       /></a>
-      <form class="col-lg-12">
-        <input
-          class="form-control"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
-      </form>
+          <div class="col-lg-3">
+                  <div class="input-group custom-search-form">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button class="btn btn-primary" type="button">
+                      <i class="fas fa-search"></i>
+                   </button>
+                  </div>
+      </div>
       <div class="links">
         <i class="fas fa-shopping-cart"></i>
         <span class="badge badge-pill badge-danger">0</span>
@@ -45,7 +47,7 @@
       <ul class="navbar-category">
         <li><a href="#">Home</a> <span area-hidden="true">/</span></li>
         <li><a href="#">Best category</a> <span area-hidden="true">/</span></li>
-        <li>Great articles</li>
+        <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Great articles</a></li>
       </ul>
     </nav>
 
