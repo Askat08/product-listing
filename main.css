@@ -1,0 +1,58 @@
+
+
+
+.navbar-light {
+    display: block;
+    padding: 25px;
+    width: 81%;
+    margin-left: 150px;
+    margin-bottom: 20px;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.7em;
+    margin-left: 10px; 
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.navbar-category li { 
+    list-style: none;
+    padding-left: 15px;
+    display: inline-block;    
+   
+}
+
+.navbar-category {
+    margin:  0 !important;
+    padding: 0;
+  
+}
+
+.col-lg-3 .input-group {
+    width: 450px;
+}
+
+nav .navbar, .col-lg-3, .links {
+display: inline-block;
+
+}
+
+.navbar {
+    margin-left: 145px;
+}
+
+.links {
+    margin-left: 230px;
+}
+
+.col-lg-3 {
+    margin-left: 90px;
+}
+
+
+
+
