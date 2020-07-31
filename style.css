@@ -1,3 +1,16 @@
+<<<<<<< HEAD
+body {
+  margin: 0;
+  font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  text-align: left;
+  background-color: #fff;
+}
+
+=======
 .tom {
   background-color: rgba(0 0 0 0.5);
 }
@@ -5,6 +18,7 @@
   box-sizing: border-box !important;
   margin: 0 5px;
 } */
+>>>>>>> e6440d3acaed06d6f965d6a7dd219c10b1a73c4f
 
 
  @media (min-width: 768px) {
@@ -19,9 +33,17 @@
 
 
 
+<<<<<<< HEAD
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+
+=======
 aside {
   margin-top: 20px;
   margin-bottom: 20px;
+>>>>>>> e6440d3acaed06d6f965d6a7dd219c10b1a73c4f
 }
 
 a {
@@ -40,7 +62,26 @@ li {
 .fa-chevron-down {
   float: right;
 }
+<<<<<<< HEAD
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.37rem;
+}
+=======
 
 .btn-link:hover {
   text-decoration: none;
 }
+>>>>>>> e6440d3acaed06d6f965d6a7dd219c10b1a73c4f
