@@ -14,45 +14,37 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
     <title>Product listing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
-    <!-- Header Section -->
-    <section>
-      <div class="container">
-        <!-- Header (Askat)-->
-        <nav class="">
-          <a class="navbar-brand"
-            ><img
-              src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png"
-              alt="logo"
-          /></a>
-          <form class="col-lg-12">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-primary">
-              <i class="fas fa-search"></i>
-            </button>
-          </form>
-          <div class="links">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="badge badge-pill badge-danger">0</span>
-            <i class="fas fa-user"></i>
-            <span>Welcome!</span>
-            <a href="#">Sign In</a>
-            <a href="#">Register</a>
-          </div>
-        </nav>
-        <!-- Header End -->
+    <!-- <div class="container"> -->
+    <!-- header -->
+    <nav class="">
+      <a class="navbar-brand"
+        ><img
+          src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png"
+          alt="logo"
+      /></a>
+      <form class="col-lg-12">
+        <input
+          class="form-control"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="links">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge badge-pill badge-danger">0</span>
+        <i class="fas fa-user"></i>
+        <span>Welcome!</span>
+        <a href="#">Sign In</a>
+        <a href="#">Register</a>
       </div>
-<<<<<<< HEAD
     </nav>
     <!-- Navbar -->
     <nav class="navbar navbar-light bg-light mt-3">
@@ -68,26 +60,26 @@
 
     <div class="row">
       <!-- Aside -->
-      <aside class="col-12 col-lg-3">
+      <aside class="col-lg-3">
         <div class="accordion" id="accordionExample">
           <div class="card">
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
+                class="btn btn-link btn-block text-left collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseProduct-type"
+                aria-expanded="false"
+                aria-controls="collapseProduct-type"
                 >
                   Product type <i class="icon-control fas fa-chevron-down"></i>
                 </button>
-              </h2>
+              </div>
             </div>
 
             <div
-              id="collapseOne"
+              id="collapseProduct-type"
               class="collapse show"
               aria-labelledby="headingOne"
               data-parent="#accordionExample"
@@ -101,14 +93,14 @@
                       placeholder="Search"
                     />
                     <div class="input-group-append">
-                      <button class="btn btn-light" type="button">
-                        <i class="fa fa-search"></i>
+                      <button class="btn btn-light border" type="button">
+                        <i class="fa fa-search text-body"></i>
                       </button>
                     </div>
                   </div>
                 </form>
 
-                <ul class="list-menu">
+                <ul class="list-menu list-unstyled text-info">
                   <li><a href="#">People </a></li>
                   <li><a href="#">Watches </a></li>
                   <li><a href="#">Cinema </a></li>
@@ -117,146 +109,179 @@
                   <li><a href="#">Animals</a></li>
                   <li><a href="#">People </a></li>
                 </ul>
-=======
-    </section>
-    <!-- Header section end -->
-
-    <!-- Navbar Section -->
-    <section class="nav">
-      <div class="container">
-        <!-- Navbar (Atay) -->
-        <nav class="navbar navbar-light bg-light mt-3">
-          <span class="navbar-brand mb-0 h1">Category products</span>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Best category</a></li>
-            <li><a href="#">Great articles</a></li>
-          </ul>
-        </nav>
-        <!-- Navbar End -->
-      </div>
-    </section>
-    <!-- Navbar Section end -->
-
-    <!-- Content Section -->
-    <section class="content">
-      <div class="container">
-        <!-- This is Row Wrapper please do not touch -->
-        <div class="row">
-          <!-- Aside Section (Kanybek)-->
-          <aside class="col-3">
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left collapsed"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapsePrice-range"
-                    aria-expanded="false"
-                    aria-controls="collapsePrice-range"
-                  >
-                    Price range <i class="icon-control fas fa-chevron-down"></i>
-                  </button>
-                </h2>
->>>>>>> e6440d3acaed06d6f965d6a7dd219c10b1a73c4f
               </div>
-              <div
-                id="collapsePrice-range"
-                class="collapse show"
-                aria-labelledby="headingPrice-range"
-                data-parent="#accordionExample"
-              >
-                <div class="card-body">
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseBrands"
+                  aria-expanded="false"
+                  aria-controls="collapseBrands"
+                >
+                  Brands <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseBrands"
+              class="collapse show"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <label class="custom-control custom-checkbox">
                   <input
-                    type="range"
-                    class="custom-range"
-                    min="0"
-                    max="100"
-                    name=""
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
                   />
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label>Min</label>
-                      <input
-                        class="form-control"
-                        placeholder="$0"
-                        type="number"
-                      />
-                    </div>
+                  <div class="custom-control-label">
+                    Mercedes
+                    <b class="badge badge-pill badge-light float-right">120</b>
                   </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button
-                        class="btn btn-link btn-block text-left collapsed"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseThree"
-                      >
-                        Price range
-                        <i class="icon-control fas fa-chevron-down"></i>
-                      </button>
-                    </h2>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">
+                    Toyota
+                    <b class="badge badge-pill badge-light float-right">15</b>
                   </div>
-                  <div
-                    id="collapseThree"
-                    class="collapse show"
-                    aria-labelledby="headingThree"
-                    data-parent="#accordionExample"
-                  >
-                    <div class="card-body">
-                      <input
-                        type="range"
-                        class="custom-range"
-                        min="0"
-                        max="100"
-                        name=""
-                      />
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          <label>Min</label>
-                          <input
-                            class="form-control"
-                            placeholder="$0"
-                            type="number"
-                          />
-                        </div>
-                        <div class="form-group text-right col-md-6">
-                          <label>Max</label>
-                          <input
-                            class="form-control"
-                            placeholder="$1,0000"
-                            type="number"
-                          />
-                        </div>
-                      </div>
-                      <!-- form-row.// -->
-                      <button class="btn btn-block btn-primary">Apply</button>
-                    </div>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    checked=""
+                    class="custom-control-input"
+                  />
+                  <div class="custom-control-label">
+                    Mitsubishi
+                    <b class="badge badge-pill badge-light float-right">35</b>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            <div class="card">
-              <div class="card-header" id="headingfour">
-                <h2 class="mb-0">
-                  <button
-                    class="btn btn-link btn-block text-left"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapseSizes"
-                    aria-expanded="true"
-                    aria-controls="collapseSizes"
-                  >
-                    Sizes <i class="icon-control fas fa-chevron-down"></i>
-                  </button>
-                </h2>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapsePrice-range"
+                  aria-expanded="false"
+                  aria-controls="collapsePrice-range"
+                >
+                  Price range <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapsePrice-range"
+              class="collapse show"
+              aria-labelledby="headingPrice-range"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <input
+                  type="range"
+                  class="custom-range"
+                  min="0"
+                  max="100"
+                  name=""
+                />
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Min</label>
+                    <input
+                      class="form-control"
+                      placeholder="$0"
+                      type="number"
+                    />
+                  </div>
+                </div>
               </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button
+                      class="btn btn-link btn-block text-left collapsed"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Price range
+                      <i class="icon-control fas fa-chevron-down"></i>
+                    </button>
+                  </h2>
+                </div>
+                <div
+                  id="collapseThree"
+                  class="collapse show"
+                  aria-labelledby="headingThree"
+                  data-parent="#accordionExample"
+                >
+                  <div class="card-body">
+                    <input
+                      type="range"
+                      class="custom-range"
+                      min="0"
+                      max="100"
+                      name=""
+                    />
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label>Min</label>
+                        <input
+                          class="form-control"
+                          placeholder="$0"
+                          type="number"
+                        />
+                      </div>
+                      <div class="form-group text-right col-md-6">
+                        <label>Max</label>
+                        <input
+                          class="form-control"
+                          placeholder="$1,0000"
+                          type="number"
+                        />
+                      </div>
+                    </div>
+                    <!-- form-row.// -->
+                    <button class="btn btn-block btn-primary">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingfour">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseSizes"
+                  aria-expanded="true"
+                  aria-controls="collapseSizes"
+                >
+                  Sizes <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
             </div>
 
             <div
@@ -280,7 +305,6 @@
                   <input type="checkbox" />
                   <span class="btn btn-light"> LG </span>
                 </label>
-              </div>
 
               <div class="card">
                 <div class="card-header" id="headingfour">
@@ -297,25 +321,21 @@
                     </button>
                   </h2>
                 </div>
-              </div>
 
-              <div class="card">
-                <div class="card-header" id="headingfive">
-                  <h2 class="mb-0">
-                    <button
-                      class="btn btn-link btn-block text-left"
-                      type="button"
-                      data-toggle="collapse"
-                      data-target="#collapseMore-filter"
-                      aria-expanded="true"
-                      aria-controls="collapseMore-filter"
-                    >
-                      More filter
-                      <i class="icon-control fas fa-chevron-down"></i>
-                    </button>
-                  </h2>
-                </div>
-              </div>
+          <div class="card">
+            <div class="card-header" id="headingfive">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseMore-filter"
+                  aria-expanded="true"
+                  aria-controls="collapseMore-filter"
+                >
+                  More filter <i class="icon-control fas fa-chevron-down"></i>
+                </button>
+              </h2>
             </div>
 
             <div
@@ -428,9 +448,18 @@
               </div>
             </div>
           </aside>
-          <!-- Aside Section End -->
 
-          <!--- Main Section (Tamerlan)--->
+
+
+
+
+
+
+
+          <!-- tamerlan--->
+
+          <!--- Main Section --->
+
           <main class="col-md-9">
             <header class="border-bottom mb-4 pb-3">
               <div class="form-inline">
@@ -464,39 +493,38 @@
               </div>
             </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="row">
-              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
-                    <img
-                      height="200px"
-                      class="card-img-top"
-                      src="http://i3.stycdn.net/images/2012/07/29/article/kt10/kt10b00218/selected-drill-t-shirt-neon-blue-1550-zoom-0.jpg"
-                      alt="hey"
-                    />
-                  </div>
-                  <div class="m-3">
-                    <p class="mb-0">Great Item name goes here</p>
-                    <div class="mb-4">
-                      <span class="font-weight-bold">$1280</span>
-                      <span class="text-muted">$1980</span>
-                    </div>
-                    <div class="text-center">
-                      <a href="#" class="btn block btn-primary">Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
                       src="https://tse4.mm.bing.net/th?id=OIP.GWMs_BiqJQ_AbmOrb9JnegHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -508,16 +536,107 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://tse4.mm.bing.net/th?id=OIP.XYv8H7yKFZc7Z0yY2-vgRQHaE8&pid=Api&P=0&w=260&h=175"
+                      src="https://tse3.mm.bing.net/th?id=OIP.KNhCscUuCXeeHrReO8x5ugHaHa&pid=Api&P=0&w=300&h=300"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://content.backcountry.com/images/items/900/MKH/MKH004I/DARDM.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://images.bewakoof.com/original/wink-new-half-sleeve-t-shirt-men-s-printed-t-shirts-197747-1538829534.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://ae01.alicdn.com/kf/HTB17F6jPVXXXXb7XXXXq6xXFXXXM/solid-color-t-shirt-men-2017-summer-new-arrival-100-cotton-high-quality-raglan-men-t.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://tse2.mm.bing.net/th?id=OIP.J1HQk6-Nj3UU8Gj9atutqAHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
                   </div>
@@ -531,18 +650,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="http://ecdn1.shoptiques.net/products/clothe-sue-b-w-check-blue-d98a53c4_l.jpg"
+                      src="https://tse3.mm.bing.net/th?id=OIP.w3hhALwEQ65LBcD2_XOJZQHaJ4&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -554,18 +673,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="http://content.backcountry.com/images/items/900/ARC/ARC00G7/QUA.jpg"
+                      src="https://regmedia.co.uk/2018/09/24/apple-macos-mojave-imac-pro-dark-mode-screen-09242018.jpg"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -577,18 +696,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://tse3.mm.bing.net/th?id=OIP.urmaMZJTmfhj_6Vc4EivzgHaFU&pid=Api&P=0&w=218&h=158"
+                      src="https://tse3.mm.bing.net/th?id=OIP.w3hhALwEQ65LBcD2_XOJZQHaJ4&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -600,18 +719,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://tse2.mm.bing.net/th?id=OIP.znaGA09T4iTEBHpHLSOccwHaHa&pid=Api&P=0&w=300&h=300"
+                      src="https://tse4.mm.bing.net/th?id=OIP.wm9i6hli0WhfUjC113LcTAHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -623,18 +742,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="http://ecdn1.shoptiques.net/products/clothe-sue-b-w-check-blue-d98a53c4_l.jpg"
+                      src="https://tse4.mm.bing.net/th?id=OIP.LhDcqIKSiO7u6RawXcxsRwHaJ4&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -646,15 +765,14 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
                       src="https://tse3.mm.bing.net/th?id=OIP.E52JGCxVjrfDoTm3JFnugAHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
@@ -669,16 +787,130 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
+                      src="https://ae01.alicdn.com/kf/HTB1us.fQpXXXXcWaXXXq6xXFXXXu/Brand-2017-Fashion-Male-Shirt-Long-Sleeves-Tops-Solid-Color-High-Quality-Mens-Dress-Shirts-Slim.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
                       src="https://regmedia.co.uk/2018/09/24/apple-macos-mojave-imac-pro-dark-mode-screen-09242018.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://ae01.alicdn.com/kf/HTB1us.fQpXXXXcWaXXXq6xXFXXXu/Brand-2017-Fashion-Male-Shirt-Long-Sleeves-Tops-Solid-Color-High-Quality-Mens-Dress-Shirts-Slim.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="http://ustacticalsupply.com/images/products/detail/PROPPERTACTICALDRESSSHIRTLONGSLEEVEOLIVEF530238330.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://tse4.mm.bing.net/th?id=OIP.GWMs_BiqJQ_AbmOrb9JnegHaHa&pid=Api&P=0&w=300&h=300"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://ae01.alicdn.com/kf/HTB1us.fQpXXXXcWaXXXq6xXFXXXu/Brand-2017-Fashion-Male-Shirt-Long-Sleeves-Tops-Solid-Color-High-Quality-Mens-Dress-Shirts-Slim.jpg"
                       alt="hey"
                     />
                   </div>
@@ -692,143 +924,19 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
+
             </div>
           </main>
-          <!-- Main Section End -->
         </div>
-        <!-- Row Wrapper End -->
       </div>
-    </section>
-    <!-- Content Section end -->
+    </div>
+  </div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
   </body>
 </html>
-
-<!-- Aside -->
-<!-- <aside class="col-12 col-md-6 col-lg-3 pl-5">
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button
-                class="btn btn-link btn-block text-left collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseProduct-type"
-                aria-expanded="false"
-                aria-controls="collapseProduct-type"
-                >
-                  Product type <i class="icon-control fas fa-chevron-down"></i>
-                </button>
-              </div>
-            </div>
-
-            <div
-              id="collapseProduct-type"
-              class="collapse show"
-              aria-labelledby="headingOne"
-              data-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <form class="pb-3">
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Search"
-                    />
-                    <div class="input-group-append">
-                      <button class="btn btn-light border" type="button">
-                        <i class="fa fa-search text-body"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-
-                <ul class="list-menu list-unstyled text-info">
-                  <li><a href="#">People </a></li>
-                  <li><a href="#">Watches </a></li>
-                  <li><a href="#">Cinema </a></li>
-                  <li><a href="#">Clothes </a></li>
-                  <li><a href="#">Home items </a></li>
-                  <li><a href="#">Animals</a></li>
-                  <li><a href="#">People </a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h2 class="mb-0">
-                <button
-                  class="btn btn-link btn-block text-left collapsed"
-                  type="button"
-                  data-toggle="collapse"
-                  data-target="#collapseBrands"
-                  aria-expanded="false"
-                  aria-controls="collapseBrands"
-                >
-                  Brands <i class="icon-control fas fa-chevron-down"></i>
-                </button>
-              </h2>
-            </div>
-            <div
-              id="collapseBrands"
-              class="collapse show"
-              aria-labelledby="headingTwo"
-              data-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <label class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    checked=""
-                    class="custom-control-input"
-                  />
-                  <div class="custom-control-label">
-                    Mercedes
-                    <b class="badge badge-pill badge-light float-right">120</b>
-                  </div>
-                </label>
-                <label class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    checked=""
-                    class="custom-control-input"
-                  />
-                  <div class="custom-control-label">
-                    Toyota
-                    <b class="badge badge-pill badge-light float-right">15</b>
-                  </div>
-                </label>
-                <label class="custom-control custom-checkbox">
-                  <input
-                    type="checkbox"
-                    checked=""
-                    class="custom-control-input"
-                  />
-                  <div class="custom-control-label">
-                    Mitsubishi
-                    <b class="badge badge-pill badge-light float-right">35</b>
-                  </div>
-                </div>
-              </div>
-            </div> -->
