@@ -20,95 +20,85 @@
   </head>
 
   <body>
-    <!-- <div class="container"> -->
-    <!-- header -->
-    <nav class="">
-      <a class="navbar-brand"
-        ><img
-          src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png"
-          alt="logo"
-      /></a>
-      <form class="col-lg-12">
-        <input
-          class="form-control"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
-      </form>
-      <div class="links">
-        <i class="fas fa-shopping-cart"></i>
-        <span class="badge badge-pill badge-danger">0</span>
-        <i class="fas fa-user"></i>
-        <span>Welcome!</span>
-        <a href="#">Sign In</a>
-        <a href="#">Register</a>
+    <!-- Header Section -->
+    <section>
+      <div class="container">
+        <!-- Header (Askat)-->
+        <!-- test -->
+        <nav class="">
+          <a class="navbar-brand"
+            ><img
+              src="http://bootstrap-ecommerce.com/bootstrap-ecommerce-html/images/logo.png"
+              alt="logo"
+          /></a>
+          <form class="col-lg-12">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+          <div class="links">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge badge-pill badge-danger">0</span>
+            <i class="fas fa-user"></i>
+            <span>Welcome!</span>
+            <a href="#">Sign In</a>
+            <a href="#">Register</a>
+          </div>
+        </nav>
+        <!-- Header End -->
       </div>
-    </nav>
-    <!-- Navbar -->
-    <nav class="navbar navbar-light bg-light mt-3">
-      <span class="navbar-brand mb-0 h1">Category products</span>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Best category</a></li>
-        <li><a href="#">Great articles</a></li>
-      </ul>
-    </nav>
+    </section>
+    <!-- Header section end -->
 
-    <div class="container">
+    <!-- Navbar Section -->
+    <section class="nav">
+      <div class="container">
+        <!-- Navbar (Atay) -->
+        <!--FOr Testing purpose-->
+        <nav class="navbar navbar-light bg-light mt-3">
+          <span class="navbar-brand mb-0 h1">Category products</span>
+          <ul class="navbar-category">
+            <li><a href="#">Home</a> <span area-hidden="true">/</span></li>
+            <li><a href="#">Best category</a> <span area-hidden="true">/</span></li>
+            <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Great articles</a></li>
+          </ul>
+        </nav>
+        <!-- Navbar End -->
+      </div>
+    </section>
+    <!-- Navbar Section end -->
 
-    <div class="row">
-      <!-- Aside -->
-      <aside class="col-lg-3">
-        <div class="accordion" id="accordionExample">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h2 class="mb-0">
-                <button
-                class="btn btn-link btn-block text-left collapsed"
-                type="button"
-                data-toggle="collapse"
-                data-target="#collapseProduct-type"
-                aria-expanded="false"
-                aria-controls="collapseProduct-type"
-                >
-                  Product type <i class="icon-control fas fa-chevron-down"></i>
-                </button>
-              </div>
-            </div>
+    <!-- Content Section -->
+    <section class="content">
+      <div class="container">
+        <!-- This is Row Wrapper please do not touch -->
 
-            <div
-              id="collapseProduct-type"
-              class="collapse show"
-              aria-labelledby="headingOne"
-              data-parent="#accordionExample"
-            >
-              <div class="card-body">
-                <form class="pb-3">
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Search"
-                    />
-                    <div class="input-group-append">
-                      <button class="btn btn-light border" type="button">
-                        <i class="fa fa-search text-body"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
 
-                <ul class="list-menu list-unstyled text-info">
-                  <li><a href="#">People </a></li>
-                  <li><a href="#">Watches </a></li>
-                  <li><a href="#">Cinema </a></li>
-                  <li><a href="#">Clothes </a></li>
-                  <li><a href="#">Home items </a></li>
-                  <li><a href="#">Animals</a></li>
-                  <li><a href="#">People </a></li>
-                </ul>
+        <div class="row">
+          <!-- Aside Section (Kanybek)-->
+          <!-- kanyek test -->
+          <!-- test test -->
+          <aside class="col-3">
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button
+                    class="btn btn-link btn-block text-left collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapsePrice-range"
+                    aria-expanded="false"
+                    aria-controls="collapsePrice-range"
+                  >
+                    Price range <i class="icon-control fas fa-chevron-down"></i>
+                  </button>
+                </h2>
               </div>
             </div>
           </div>
