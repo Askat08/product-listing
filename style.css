@@ -60,6 +60,10 @@ aside ul li {
   align-items: center;
 }
 
+.widget-header {
+  position: relative;
+}
+
 .signin-icon {
   display: inline-flex;
   align-items: center;
@@ -67,15 +71,13 @@ aside ul li {
 
 .icon {
   padding: 20px;
-  /* position: relative; */
   color: #939494;
 }
 
 .badge {
   position: absolute;
-  top: 0;
-  left: 115px;
-  /* display: inline-block; */
+  top: -14px;
+  right: -10px;
 }
 
 .text {
