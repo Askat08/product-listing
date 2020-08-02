@@ -14,9 +14,9 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
     <title>Product listing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
   </head>
 
   <body>
@@ -24,6 +24,7 @@
     <section>
       <div class="container">
         <!-- Header (Askat)-->
+        <!-- test -->
         <nav class="">
           <a class="navbar-brand"
             ><img
@@ -65,10 +66,10 @@
         <!--FOr Testing purpose-->
         <nav class="navbar navbar-light bg-light mt-3">
           <span class="navbar-brand mb-0 h1">Category products</span>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Best category</a></li>
-            <li><a href="#">Great articles</a></li>
+          <ul class="navbar-category">
+            <li><a href="#">Home</a> <span area-hidden="true">/</span></li>
+            <li><a href="#">Best category</a> <span area-hidden="true">/</span></li>
+            <li><a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Great articles</a></li>
           </ul>
         </nav>
         <!-- Navbar End -->
@@ -91,6 +92,7 @@
         <aside class="col-sm-12 col-md-3">
           <div class="accordion" id="accordionExample">
             <div class="card">
+
               <article class="filter-group">
                 <header class="card-header">
                   <a href="#" data-toggle="collapse" data-target="#collapse_1" aria-expanded="true" class="">
@@ -212,6 +214,7 @@
                       <span class="btn btn-light"> XXL </span>
                     </label>
                 </div><!-- card-body.// -->
+
                 </div>
               </article> <!-- filter-group .// -->
               <article class="filter-group">
@@ -244,6 +247,7 @@
                     </label>
                   </div><!-- card-body.// -->
                 </div>
+
               </article> <!-- filter-group .// -->
             </div> <!-- card.// -->
           </div>
@@ -290,39 +294,38 @@
               </div>
             </header>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="row">
-              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
-                    <img
-                      height="200px"
-                      class="card-img-top"
-                      src="http://i3.stycdn.net/images/2012/07/29/article/kt10/kt10b00218/selected-drill-t-shirt-neon-blue-1550-zoom-0.jpg"
-                      alt="hey"
-                    />
-                  </div>
-                  <div class="m-3">
-                    <p class="mb-0">Great Item name goes here</p>
-                    <div class="mb-4">
-                      <span class="font-weight-bold">$1280</span>
-                      <span class="text-muted">$1980</span>
-                    </div>
-                    <div class="text-center">
-                      <a href="#" class="btn block btn-primary">Add to cart</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
 
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
                       src="https://tse4.mm.bing.net/th?id=OIP.GWMs_BiqJQ_AbmOrb9JnegHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -334,16 +337,107 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://tse4.mm.bing.net/th?id=OIP.XYv8H7yKFZc7Z0yY2-vgRQHaE8&pid=Api&P=0&w=260&h=175"
+                      src="https://tse3.mm.bing.net/th?id=OIP.KNhCscUuCXeeHrReO8x5ugHaHa&pid=Api&P=0&w=300&h=300"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://content.backcountry.com/images/items/900/MKH/MKH004I/DARDM.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://images.bewakoof.com/original/wink-new-half-sleeve-t-shirt-men-s-printed-t-shirts-197747-1538829534.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://ae01.alicdn.com/kf/HTB17F6jPVXXXXb7XXXXq6xXFXXXM/solid-color-t-shirt-men-2017-summer-new-arrival-100-cotton-high-quality-raglan-men-t.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://tse2.mm.bing.net/th?id=OIP.J1HQk6-Nj3UU8Gj9atutqAHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
                   </div>
@@ -357,18 +451,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="http://ecdn1.shoptiques.net/products/clothe-sue-b-w-check-blue-d98a53c4_l.jpg"
+                      src="https://tse3.mm.bing.net/th?id=OIP.w3hhALwEQ65LBcD2_XOJZQHaJ4&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -380,18 +474,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="http://content.backcountry.com/images/items/900/ARC/ARC00G7/QUA.jpg"
+                      src="https://regmedia.co.uk/2018/09/24/apple-macos-mojave-imac-pro-dark-mode-screen-09242018.jpg"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -403,18 +497,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://tse3.mm.bing.net/th?id=OIP.urmaMZJTmfhj_6Vc4EivzgHaFU&pid=Api&P=0&w=218&h=158"
+                      src="https://tse3.mm.bing.net/th?id=OIP.w3hhALwEQ65LBcD2_XOJZQHaJ4&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -426,18 +520,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://tse2.mm.bing.net/th?id=OIP.znaGA09T4iTEBHpHLSOccwHaHa&pid=Api&P=0&w=300&h=300"
+                      src="https://tse4.mm.bing.net/th?id=OIP.wm9i6hli0WhfUjC113LcTAHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -449,18 +543,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="http://ecdn1.shoptiques.net/products/clothe-sue-b-w-check-blue-d98a53c4_l.jpg"
+                      src="https://tse4.mm.bing.net/th?id=OIP.LhDcqIKSiO7u6RawXcxsRwHaJ4&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -472,15 +566,14 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
                       src="https://tse3.mm.bing.net/th?id=OIP.E52JGCxVjrfDoTm3JFnugAHaHa&pid=Api&P=0&w=300&h=300"
                       alt="hey"
                     />
@@ -495,18 +588,18 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
-
               <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
-                <div class="card">
-                  <div class="img-wrap pt-2">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
                     <img
                       height="200px"
-                      class="card-img-top"
-                      src="https://regmedia.co.uk/2018/09/24/apple-macos-mojave-imac-pro-dark-mode-screen-09242018.jpg"
+                      src="https://ae01.alicdn.com/kf/HTB1us.fQpXXXXcWaXXXq6xXFXXXu/Brand-2017-Fashion-Male-Shirt-Long-Sleeves-Tops-Solid-Color-High-Quality-Mens-Dress-Shirts-Slim.jpg"
                       alt="hey"
                     />
+                    <a class="btn-overlay" href="#"></a>
                   </div>
                   <div class="m-3">
                     <p class="mb-0">Great Item name goes here</p>
@@ -518,8 +611,32 @@
                       <a href="#" class="btn block btn-primary">Add to cart</a>
                     </div>
                   </div>
-                </div>
+                </figure>
               </div>
+              <div class="mb-4 col-9 mx-auto col-md-6 col-lg-4">
+                <figure class="card card-product-grid">
+                  <div class="img-wrap">
+                    <span class="badge badge-danger"> NEW </span>
+                    <img
+                      height="200px"
+                      src="https://regmedia.co.uk/2018/09/24/apple-macos-mojave-imac-pro-dark-mode-screen-09242018.jpg"
+                      alt="hey"
+                    />
+                    <a class="btn-overlay" href="#"></a>
+                  </div>
+                  <div class="m-3">
+                    <p class="mb-0">Great Item name goes here</p>
+                    <div class="mb-4">
+                      <span class="font-weight-bold">$1280</span>
+                      <span class="text-muted">$1980</span>
+                    </div>
+                    <div class="text-center">
+                      <a href="#" class="btn block btn-primary">Add to cart</a>
+                    </div>
+                  </div>
+                </figure>
+              </div>
+
             </div>
           </main>
           <!-- Main Section End -->
@@ -546,4 +663,5 @@
     ></script>
   </body>
 </html>
+
 

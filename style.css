@@ -1,3 +1,16 @@
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, "Helvetica Neue", "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #343a40;
+  text-align: left;
+  background-color: #fff;
+}
+
+
 .tom {
   background-color: rgba(0 0 0 0.5);
 }
@@ -5,6 +18,7 @@
   box-sizing: border-box !important;
   margin: 0 5px;
 } */
+
 
 
  /* @media (min-width: 768px) {
@@ -46,8 +60,3 @@ aside ul li {
 .fa-chevron-down {
   float: right;
 }
-
-.btn-link:hover {
-  text-decoration: none;
-}
-
